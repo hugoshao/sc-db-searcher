@@ -1,0 +1,21 @@
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller 打包生成的临时文件夹
+build/
+dist/
+*.spec
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# 个人编辑器设置
+.vscode/
+.idea/
+
+# 数据库文件（如果你想让别人自己准备数据，就排除它）
+# data.txt

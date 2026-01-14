@@ -6,6 +6,11 @@
 
 ![SC 搜索工具截图](assets/screenshot.png)
 
+
+### 运行说明：
+- 为确保快捷键在游戏中生效，请务必以管理员身份运行程序。
+- 游戏建议开启 Borderless (无边框窗口) 模式。
+
 ### ✨ 功能特点
 - **智能搜索**：支持中文、全拼（`xinbabeiqi`）、简拼（`xbbq`）以及模糊匹配。
 - **权重优化**：自动识别核心词条，短词优先展示（如“新巴贝奇”会排在“新巴贝奇星际空港”之前）。
@@ -13,12 +18,10 @@
 - **现代 UI**：基于 CustomTkinter 开发，适配 Windows 11 深色模式。
 - **单文件分发**：支持打包成独立 EXE，内置数据库，无需安装 Python 环境。
 
-### 🛠️ 技术栈
-- Python 3.11
-- GUI: `CustomTkinter`
-- 搜索匹配: `RapidFuzz`
-- 拼音处理: `PyPinyin`
-- 剪贴板: `Pyperclip`
+### 🛠️ 环境要求
+- Python 3.8+
+- 依赖库：pip install customtkinter rapidfuzz pypinyin pyperclip keyboard pyautogui
+
 
 ### 📥 数据说明
 本项目使用的 `data.txt` 数据来源于 **“sc汉化盒子”**。感谢汉化团队的辛勤付出。
@@ -33,4 +36,4 @@
    python app.py
 3. 打包程序
     ```bash
-    py -m PyInstaller --noconsole --onefile --collect-all customtkinter --add-data "data.txt;." --name "SC_DB_Searcher" --clean sc_searcher.py
+    py -m PyInstaller --noconsole --onefile --uac-admin  --collect-all customtkinter --add-data "data.txt;." --name "SC_DB_Searcher" --clean sc_searcher.py

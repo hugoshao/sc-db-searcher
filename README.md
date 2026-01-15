@@ -10,6 +10,7 @@
 ### 运行说明：
 - 为确保快捷键在游戏中生效，请务必以管理员身份运行程序。
 - 游戏建议开启 Borderless (无边框窗口) 模式。
+- 自动尝试切换英文输入法，建议系统内至少保留一个“英语（美国）”语言包以获得最佳体验。
 
 ### ✨ 功能特点
 - **智能搜索**：支持中文、全拼（`xinbabeiqi`）、简拼（`xbbq`）以及模糊匹配。
@@ -36,4 +37,4 @@
    python app.py
 3. 打包程序
     ```bash
-    py -m PyInstaller --noconsole --onefile --uac-admin  --collect-all customtkinter --add-data "data.txt;." --name "SC_DB_Searcher" --clean sc_searcher.py
+    py -m PyInstaller --noconsole --onefile --uac-admin --collect-all customtkinter --add-data "data.txt;." --name "SC_DB_Searcher" --clean sc_searcher.py
